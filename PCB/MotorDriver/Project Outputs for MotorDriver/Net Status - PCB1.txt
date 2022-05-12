@@ -1,0 +1,8 @@
+Net Status Report
+Filename     : PCB1.PcbDoc
+Date         : 2022-03-12
+Time         : 2:10:56 PM
+Time Elapsed : 00:00:00
+
+Nets, Layer, Length
+count : 0

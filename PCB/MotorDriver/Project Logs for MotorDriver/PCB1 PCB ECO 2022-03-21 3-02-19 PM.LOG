@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=LEFT Pin=J3-1
+Removed Pin From Net: NetName=RIGHT Pin=J3-2
+Removed Pin From Net: NetName=uCGND Pin=J3-3
+Removed Member From Class: ClassName=DriverSchematic Member=J3

@@ -1,0 +1,32 @@
+Removed Pin From Net: NetName=Vin Pin=J1-1
+Removed Pin From Net: NetName=GND Pin=J1-2
+Removed Pin From Net: NetName=SCL Pin=J3-1
+Removed Pin From Net: NetName=SDA Pin=J3-2
+Removed Pin From Net: NetName=GND Pin=J3-3
+Removed Member From Class: ClassName=BoardSchematic Member=J1
+Removed Member From Class: ClassName=BoardSchematic Member=J3
+Added Component: Designator=P2(61300511121)
+Add component (AddParameter): Name = "Contact Resistance"; Value = "20mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.we-online.de"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "THT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40to105degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "61300511121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bag"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "61300511121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Number"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "WurthElektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "3A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Row Number"; Value = "Single"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Withstanding Voltage"; Value = "500VAC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Working Voltage"; Value = "250VAC"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Vin Pin=P2-1
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=SCL Pin=P2-3
+Added Pin To Net: NetName=SDA Pin=P2-4
+Added Pin To Net: NetName=GND Pin=P2-5
+Added Member To Class: ClassName=BoardSchematic Member=Component P2 Connector

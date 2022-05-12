@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=GND Pin=J2-1
+Removed Pin From Net: NetName=Vin Pin=J2-2
+Removed Member From Class: ClassName=BoardSchematic Member=J2

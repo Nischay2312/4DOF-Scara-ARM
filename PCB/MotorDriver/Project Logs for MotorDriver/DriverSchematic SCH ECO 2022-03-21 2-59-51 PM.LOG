@@ -1,0 +1,5 @@
+Remove Pin=R9-2 From Net=LEFT
+Remove Pin=R11-1 From Net=RIGHT
+Remove Pin=S1-2 From Net=RIGHT
+Remove Pin=S1-3 From Net=LEFT
+Change Component Footprint: Designator=J3 Old Footprint=691102710003 New Footprint=691102710003

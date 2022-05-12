@@ -1,0 +1,34 @@
+
+##################  Model Data Report  ##################
+
+============= SPICE Model =================
+* Library of Phototransistor VO615A
+* Copyright VISHAY, Inc. 2010 All Rights Reserved.
+*
+* ==== VO615A-3 ====
+* A = diode anode
+* K = diode cathode
+* C = BJT collector
+* E = BJT emitter
+*$
+.SUBCKT VO615A/VSH A K C E PARAMS: REL_CTR=1
+D1 A D D9508	;IRED
+Vsense D K 0 ;IF Current sense
+Hd R 0 Vsense 1	;I-V
+Rd R T 10K
+Cd T 0 0.2n
+Rdummy B 0 4G
+Q1 C B E E QT1090 ;phototransistor
+* V-I
+Gpcg C B TABLE  ;Photodetector {(IC vs IF) / Q1 BF}
++ {0.8*(V(T)^1.658*exp(limit(4.36-60*V(T),-50,50))*REL_CTR/100)}
++ (0,0) (10,10)
+.model D9508 D IS=1P N=1.948621 RS=1.560495 BV=6 IBV=10U
++ CJO=18.8P VJ=0.532794 M=0.27985 EG=1.424 TT=500N 
+.model QT1090 NPN IS=3.64P BF=100 NF=1.193293 BR=10 TF=13N TR=350n
++ CJE=5.16P VJE=0.99 MJE=0.2411274 CJC=18P VJC=0.597478 MJC=0.431978
++ ISC=0.207N VAF=65 IKF=0.09 ISS=0 CJS=7.74p VJS=0.61 MJS=0.31
+.ends
+
+============= Model template =================
+x%p %tA %tK %tC %tE %m

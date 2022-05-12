@@ -1,0 +1,22 @@
+%Script to calculate endeffector force
+pullH = 3*1e-2;
+pipeD = 11.05*1e-3;
+A1 = pi*pipeD/2*pipeD/2;
+HoleVolume = A1 * pullH;
+
+%PV = nRT
+Temp = 25+273.15;
+Rgas = 8.31446261815324;
+
+AirDensity = 1.225;
+AirMolarDensity = 28.97*1e-3;
+moles = AirDensity * HoleVolume / AirMolarDensity; 
+
+P1 = moles * Rgas * Temp/ HoleVolume;
+
+outHoleD = 2.55*1e-3;
+A2 = pi*(outHoleD/2)*(outHoleD/2);
+
+P2 = P1*
+
+
